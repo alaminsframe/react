@@ -6,8 +6,8 @@ const Cars = () => {
   return (
     <>
       <Header />
-      <CarsList />
       <SearchBar />
+      <CarsList />
     </>
   )
 }
