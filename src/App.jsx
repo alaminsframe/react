@@ -1,11 +1,11 @@
-import Banner from "./Banner"
+import Cars from "./Cars"
 
 function App() {
 
   return (
     <>
-      <div className="bg-slate-700">
-        <Banner />
+      <div >
+        <Cars />
       </div>
     </>
   )
