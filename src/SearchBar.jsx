@@ -3,7 +3,7 @@ import CheckInput from "./CheckInput"
 
 const SearchBar = () => {
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex items-center gap-3 w-full">
       <SearchInput />
       <CheckInput />
     </div>
