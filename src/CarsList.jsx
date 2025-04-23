@@ -8,19 +8,20 @@ const CarsList = () => {
     { id: 4, title: "Electric Hatchback", brand: "Nissan", year: 2022, price: 35000, isPremium: false },
     { id: 5, title: "Luxury SUV", brand: "BMW", year: 2023, price: 90000, isPremium: true },
   ]
-
   return (
-    <ul>
+    <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
       {
-        cars.map( (car)=>{
-          <li key= {car.id}>
+        cars.map( (car) => (
+          <li 
+            key= {car.id}
+            className="shadow border border-gray-200 p-3 rounded-lg"
+          >
             <CarsDetails car={car} />
           </li>
-        })
+        ))
       }
-      <CarsDetails />
     </ul>
-  )
+  );
 }
 
 export default CarsList
