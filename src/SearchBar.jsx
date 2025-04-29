@@ -1,12 +1,14 @@
 import SearchInput from "./SearchInput"
 import CheckInput from "./CheckInput"
 
-const SearchBar = () => {
+const SearchBar = ({searchTerm, onSearchCar, cars}) => {
   return (
-    <div className="flex items-center gap-3 w-full">
-      <SearchInput />
-      <CheckInput />
-    </div>
+    <>
+      <form className="flex items-center gap-3 w-full">
+        <SearchInput searchTerm = {searchTerm} onSearchCar = {onSearchCar} />
+        <CheckInput cars = {cars} />
+      </form>
+    </>
   )
 }
 

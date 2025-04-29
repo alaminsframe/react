@@ -2,9 +2,8 @@
 
 const CarsDetails = ({car}) => {
 
-  const labels  = ['Brand', 'Year', 'price', 'Premium']
   return (
-    <>
+    <div className="shadow border border-gray-200 p-3 rounded-lg">
       <div>
         <h3 className="text-xl mb-2 font-bold">{car.title}</h3>
       </div>
@@ -42,7 +41,7 @@ const CarsDetails = ({car}) => {
           </span>
         </li>
       </ul>
-    </>
+    </div>
   )
 }
 
