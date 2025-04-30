@@ -1,5 +1,5 @@
 import Banner from "./Banner"
-import Exercise from "./Exercise"
+import Exercise from "./Exercise/Exercise"
 function App() {
 
   return (
