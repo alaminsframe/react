@@ -3,7 +3,7 @@ import CarsDetails from "./CarsDetails"
 const CarsList = ({cars, searchTerm}) => {
   const carlist = []
   cars.forEach( (car)=>{
-    if(car.title.toLowerCase().indexOf(searchTerm.toLowerCase()) === -1){
+    if(car.title.toLowerCase().trim().indexOf(searchTerm.toLowerCase().trim()) === -1){
       return;
     }
     carlist.push( <CarsDetails key= {car.id} car={car} /> )

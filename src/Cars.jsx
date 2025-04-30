@@ -30,7 +30,7 @@ const Cars = () => {
   
   
   return (
-    <div className="max-w-full mx-auto p-5 sm:p-10 space-y-5">
+    <div className="max-w-full h-screen mx-auto p-5 sm:p-10 bg-gray-100 space-y-5">
       <Header />
       <SearchBar cars = {cars} searchTerm = {searchTerm} onSearchCar = {setSearchTerm} handleOnSearchPremium={handleOnSearchPremium} />
       <CarsList cars = {cars} searchTerm = {searchTerm} />

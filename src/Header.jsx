@@ -2,7 +2,7 @@
 const Header = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold">TapaScript Cars</h1>
+      <h1 className="text-3xl font-bold">Find Your Cars</h1>
     </div>
   )
 }

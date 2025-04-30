@@ -3,7 +3,7 @@
 const CarsDetails = ({car}) => {
 
   return (
-    <div className="shadow border border-gray-200 p-3 rounded-lg">
+    <div className="shadow hover:shadow-xl hover:bg-gray-50 duration-300 border border-gray-200 p-3 rounded-lg cursor-pointer">
       <div>
         <h3 className="text-xl mb-2 font-bold">{car.title}</h3>
       </div>
