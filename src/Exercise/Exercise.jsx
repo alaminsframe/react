@@ -1,9 +1,11 @@
 import React from 'react'
 
-const Exercise = () => {
+const Exercise = ({name}) => {
+  console.log(name);
+  
   return (
-    <div className='h-screen flex flex-col justify-center items-center'>
-      
+    <div className=''>
+      <h1 className='text-lg text-white capitalize'>{name}</h1>
     </div>
   )
 }
