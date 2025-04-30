@@ -2,7 +2,6 @@ import CarsDetails from "./CarsDetails"
 
 const CarsList = ({cars, searchTerm}) => {
   const carlist = []
-
   cars.forEach( (car)=>{
     if(car.title.toLowerCase().indexOf(searchTerm.toLowerCase()) === -1){
       return;
