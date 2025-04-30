@@ -1,11 +1,12 @@
 import Banner from "./Banner"
-
+import Exercise from "./Exercise"
 function App() {
 
   return (
     <>
       <div className="bg-slate-700">
-        <Banner />
+        <Exercise />
+        {/* <Banner /> */}
       </div>
     </>
   )
