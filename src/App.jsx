@@ -4,13 +4,15 @@ import Exercise from "./Exercise/Exercise"
 import User from './Exercise/User';
 import Wrapper from './Exercise/Wrapper';
 import Button from './Exercise/Button';
+import TextIput from './Exercise/TextIput';
 
 function App() {
 const [student, setStudent] = useState();
 
   return (
     <div className="h-screen flex flex-col justify-center items-center bg-slate-700 gap-2">
-      <div>
+      <>
+        <TextIput />
         <Button />
         {/* <Wrapper>
           <h1 className='text-2xl text-white'>Hello world</h1>
@@ -21,7 +23,7 @@ const [student, setStudent] = useState();
         {student && <Exercise name= {student} /> }
         <button onClick={()=>setStudent('world hello')}>update name</button>
         <Banner /> */}
-      </div>
+      </>
       
     </div>
   )
