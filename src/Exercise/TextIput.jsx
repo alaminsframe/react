@@ -9,7 +9,7 @@ const TextIput = () => {
     <>
         <input 
         type="number" 
-        className='border p-2 rounded bg-blue-300'
+        className='appearance-none border p-2 rounded bg-blue-300'
         placeholder='Type here'
         onChange={handleChange}
         />
