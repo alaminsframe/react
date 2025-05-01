@@ -1,9 +1,9 @@
 
 function Button({msg, children}) {
 
-    const handleClick = (event, msg) => {
-        console.log(event);
-        console.log(msg);
+    const handleClick = (event, massage) => {
+        console.log(event.target);
+        console.log(massage);
     }
 
     return (
