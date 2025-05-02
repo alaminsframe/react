@@ -26,6 +26,11 @@ const Register = () => {
                     >
                     Submit
                </button>
+               <div>
+                    <p className="text-slate-300 mt-2">
+                         {query}
+                    </p>
+               </div>
           </form>
      );
 };
