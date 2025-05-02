@@ -18,7 +18,8 @@ const Bibbling = () => {
     return (
         <div 
             onClick={() => console.log('parent')}
-            className='flex flex-col gap-2 bg-slate-800 p-4 rounded-md'>
+            className='flex gap-2 bg-slate-800 p-4 rounded-md'
+        >
             <Button 
             onClick={handleClick} 
             className='bg-slate-500 text-white p-2 rounded-md'>
@@ -32,6 +33,14 @@ const Bibbling = () => {
             } 
             className='bg-slate-500 text-white p-2 rounded-md'>
                 Down
+            </Button>
+            <Button 
+            onClickCapture={(e) => {
+                console.log('Capture child');
+            }
+            } 
+            className='bg-slate-500 text-white p-2 rounded-md'>
+                Capture
             </Button>
         </div>
     )
