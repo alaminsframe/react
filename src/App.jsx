@@ -8,6 +8,7 @@ import TextIput from './Exercise/TextIput';
 import Buttons from './Exercise/Buttons';
 import Toolbar from './Exercise/ToolBar';
 import Register from './Exercise/Register';
+import Bubbling from './Exercise/Bibbling';
 
 function App() {
 const [student, setStudent] = useState();
@@ -20,6 +21,7 @@ const [student, setStudent] = useState();
         <Buttons />
         <Toolbar />
         <Register />
+        <Bubbling />
         {/* <Wrapper>
           <h1 className='text-2xl text-white'>Hello world</h1>
           <p className='text-lg text-white'>This is a simple react app</p>
