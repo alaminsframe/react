@@ -15,17 +15,16 @@ const Cars = () => {
   const [cars, setCars] = useState(CARS);
 
   const handleOnSearchPremium = (e) => {
-    let check = e.target.checked; 
-    if(check){
-      setCars(cars.filter( car => car.isPremium))
-      console.log(check);
-      
-      return !check
-      
+    if (e.target.checked) {
+      setCars(cars.filter(car => car.isPremium));
     }
+    else {
+      setCars(CARS);
+    }
+    //console.log(e.target.checked);
     return cars
   }
-  console.log(cars);
+  //console.log(cars);
   
   
   

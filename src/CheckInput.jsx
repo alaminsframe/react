@@ -4,10 +4,11 @@ const CheckInput = ({handleOnSearchPremium}) => {
     <>
       <input 
         type="checkbox"
+        id="premium"
         onChange={handleOnSearchPremium}
-        className="h-7 w-7 appearance-none border-2 rounded checked:bg-blue-400"
+        className="h-7 w-7 appearance-none border-2 cursor-pointer rounded checked:bg-blue-400"
        />
-       <span className="font-bold text-sm md:text-base">Show Premium Only</span>
+       <label htmlFor="premium" className="font-bold text-sm md:text-base cursor-pointer">Show Premium Only</label>
     </>
   )
 }
