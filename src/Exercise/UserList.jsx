@@ -9,16 +9,28 @@ const UserList = () => {
     }])
 
     const changeUser = (id, name) => {
-        const newUsers = [...users];
-        const foundUser = newUsers.find( (user) => user.id === id );
+        const userCopy = [...users];
+        const foundUser = userCopy.find( (user) => user.id === id );
         if (foundUser) {
             foundUser.name = name;
         } 
-        setUsers(newUsers);
+        setUsers(userCopy);
     }
+
+    const addUser = () => {
+        const newUser = {
+            id: crypto.randomUUID(),
+            name: 'Jhon Le',
+            address: 'Los Angeles',
+        }
+        setUsers([...users, newUser]);
+        console.log(users);
+        
+    }
+
     return (
         <div>
-            <ul>
+            <ul className='flex flex-col gap-4'>
                 {
                     users.map((user) =>(
                         <li key={user.id} className='flex gap-4 items-center'>
@@ -35,6 +47,13 @@ const UserList = () => {
                     ))
                 }
             </ul>
+
+            <button
+                onClick = {addUser}
+                className='bg-cyan-600 text-white px-1.5 py-1 rounded-md'
+            >
+                Add User
+            </button>
         </div>
     )
 }
