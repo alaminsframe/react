@@ -9,6 +9,7 @@ import Buttons from './Exercise/Buttons';
 import Toolbar from './Exercise/ToolBar';
 import Register from './Exercise/Register';
 import Bubbling from './Exercise/Bibbling';
+import UserList from './Exercise/UserList';
 
 function App() {
 const [student, setStudent] = useState();
@@ -16,12 +17,13 @@ const [student, setStudent] = useState();
   return (
     <div className="h-screen flex flex-col justify-center items-center bg-slate-700 gap-2">
       <>
-        <TextIput />
+        <UserList />
+        {/* <TextIput />
         <Button />
         <Buttons />
         <Toolbar />
         <Register />
-        <Bubbling />
+        <Bubbling /> */}
         {/* <Wrapper>
           <h1 className='text-2xl text-white'>Hello world</h1>
           <p className='text-lg text-white'>This is a simple react app</p>
