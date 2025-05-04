@@ -1,9 +1,17 @@
+import { useEffect } from 'react';
 import {useState} from 'react'
 
 const Timer = () => {
     let [sec, setSec] = useState(0);
     let [min, setMin] = useState(0);
     let [hour, setHour] = useState(0);
+
+    useEffect(()=>{console.log("useEffect without any dependency");
+    })
+    useEffect(()=>{console.log("useEffect with empty dependency");
+    },[])
+    useEffect(()=>{console.log("useEffect with dependency");
+    },[sec])
     setTimeout(() => {
         setSec(++sec)
         if(sec === 60){
@@ -15,7 +23,7 @@ const Timer = () => {
             }
         }
     }
-    , 1000);
+    , 10000);
     let zero = "0";
     return (
         <div className='flex'>
@@ -28,6 +36,9 @@ const Timer = () => {
             <p className='text-2xl p-2 border rounded'>
                 {sec >= 10 ? sec : zero+sec}
             </p>
+            <button onClick={()=>setSec(++sec)}>
+                click
+            </button>
         </div>
     )
 }
