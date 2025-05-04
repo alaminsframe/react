@@ -10,6 +10,7 @@ import Toolbar from './Exercise/ToolBar';
 import Register from './Exercise/Register';
 import Bubbling from './Exercise/Bibbling';
 import UserList from './Exercise/UserList';
+import Timer from './Exercise/Timer';
 
 function App() {
 const [student, setStudent] = useState();
@@ -17,6 +18,7 @@ const [student, setStudent] = useState();
   return (
     <div className="h-screen flex flex-col justify-center items-center text-white bg-slate-700 gap-2">
       <>
+        <Timer />
         <UserList />
         {/* <TextIput />
         <Button />
